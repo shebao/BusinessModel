@@ -45,7 +45,7 @@ public class Test implements BaseObject,Runnable{
 	@Override
 	public void run() {
 		for (int i = 0; i < 99999; i++) {
-			dbo.runUpdate("insert into ti values(" + i + ",1,'这是线程" + Thread.currentThread().getName() + "写入');");
+			dbOperation.runUpdate("insert into ti values(" + i + ",1,'这是线程" + Thread.currentThread().getName() + "写入');");
 		}
 		
 	}
