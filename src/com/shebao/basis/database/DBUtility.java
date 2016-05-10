@@ -48,6 +48,19 @@ public abstract class DBUtility implements BaseObject{
 	 */
 	public abstract Date outputDate(String str);
 	
+	/**
+	 * 输入一个bool型值,转换成数据库接受的bool型
+	 * @param bool
+	 * @return
+	 */
+	public abstract String inputBool(boolean bool);
 
+	
+	/**
+	 * 将一个string值转换成Bool类型
+	 * @param str
+	 * @return
+	 */
+	public abstract boolean outputBool(String str);
 	
 }

@@ -12,6 +12,8 @@ import java.util.logging.Logger;
 import com.shebao.basis.database.DBOperation;
 import com.shebao.basis.database.DBUtility;
 import com.shebao.basis.database.PGDBUtility;
+import com.shebao.model.Employee.PermissionGroup;
+
 import sun.misc.BASE64Encoder;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -80,7 +82,7 @@ public class Base{
 		isFirstCallInit = false;
 
 		// TODO 初始化所有MODEL对象
-		// PermissionGroup.init();
+		 PermissionGroup.init();
 		// Employee.init();
 		// ProductCategory.init();
 		// Specification.init();//规格

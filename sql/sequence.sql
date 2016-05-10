@@ -3,328 +3,290 @@
 /* Created on:     2016/5/9 18:00:32                            */
 /*==============================================================*/
 
+DROP SEQUENCE IF EXISTS activity_cash_seq CASCADE;
 
-drop sequence activity_cash_seq;
+DROP SEQUENCE IF EXISTS adjusts_stock_order_seq CASCADE;
 
-drop sequence adjusts_stock_order_seq;
+DROP SEQUENCE IF EXISTS ali_seq CASCADE;
 
-drop sequence ali_seq;
+DROP SEQUENCE IF EXISTS c_bank_seq CASCADE;
 
-drop sequence c_bank_seq;
+DROP SEQUENCE IF EXISTS c_finance_seq CASCADE;
 
-drop sequence c_finance_seq;
+DROP SEQUENCE IF EXISTS credit_unit_seq CASCADE;
 
-drop sequence credit_unit_seq;
+DROP SEQUENCE IF EXISTS cup_seq CASCADE;
 
-drop sequence cup_seq;
+DROP SEQUENCE IF EXISTS custom_address_seq CASCADE;
 
-drop sequence custom_address_seq;
+DROP SEQUENCE IF EXISTS custom_cash_seq CASCADE;
 
-drop sequence custom_cash_seq;
+DROP SEQUENCE IF EXISTS custom_collect_seq CASCADE;
 
-drop sequence custom_collect_seq;
+DROP SEQUENCE IF EXISTS custom_join_activity_seq CASCADE;
 
-drop sequence custom_join_activity_seq;
+DROP SEQUENCE IF EXISTS custom_pay_seq CASCADE;
 
-drop sequence custom_pay_seq;
+DROP SEQUENCE IF EXISTS custom_seq CASCADE;
 
-drop sequence custom_seq;
+DROP SEQUENCE IF EXISTS department_seq  CASCADE;
 
-drop sequence department_seq;
+DROP SEQUENCE IF EXISTS display_dtl_seq CASCADE;
 
-drop sequence display_dtl_seq;
+DROP SEQUENCE IF EXISTS display_seq CASCADE;
 
-drop sequence display_seq;
+DROP SEQUENCE IF EXISTS document_seq CASCADE;
 
-drop sequence document_seq;
+DROP SEQUENCE IF EXISTS employee_seq CASCADE;
 
-drop sequence employee_seq;
+DROP SEQUENCE IF EXISTS into_stock_order_seq CASCADE;
 
-drop sequence into_stock_order_seq;
+DROP SEQUENCE IF EXISTS out_stock_order_seq CASCADE;
 
-drop sequence out_stock_order_seq;
+DROP SEQUENCE IF EXISTS permission_seq CASCADE;
 
-drop sequence permission_seq;
+DROP SEQUENCE IF EXISTS product_category_seq CASCADE;
 
-drop sequence product_category_seq;
+DROP SEQUENCE IF EXISTS product_seq CASCADE;
 
-drop sequence product_seq;
+DROP SEQUENCE IF EXISTS purchase_order_seq CASCADE;
 
-drop sequence purchase_order_seq;
+DROP SEQUENCE IF EXISTS return_visit_seq CASCADE;
 
-drop sequence return_visit_seq;
+DROP SEQUENCE IF EXISTS role_group_seq CASCADE;
 
-drop sequence role_group_seq;
+DROP SEQUENCE IF EXISTS sale_activity_category_seq CASCADE;
 
-drop sequence sale_activity_category_seq;
+DROP SEQUENCE IF EXISTS sale_activity_seq CASCADE;
 
-drop sequence sale_activity_seq;
+DROP SEQUENCE IF EXISTS sale_order_dtl_seq CASCADE;
 
-drop sequence sale_order_dtl_seq;
+DROP SEQUENCE IF EXISTS sale_order_seq CASCADE;
 
-drop sequence sale_order_seq;
+DROP SEQUENCE IF EXISTS shebei_seq CASCADE;
 
-drop sequence shebei_seq;
+DROP SEQUENCE IF EXISTS specification_seq CASCADE;
 
-drop sequence specification_seq;
+DROP SEQUENCE IF EXISTS staging_seq CASCADE;
 
-drop sequence staging_seq;
+DROP SEQUENCE IF EXISTS supplier_seq CASCADE;
 
-drop sequence supplier_seq;
+DROP SEQUENCE IF EXISTS transfer_order_seq CASCADE;
 
-drop sequence transfer_order_seq;
+DROP SEQUENCE IF EXISTS warehorse_seq CASCADE;
 
-drop sequence warehorse_seq;
+CREATE SEQUENCE activity_cash_seq INCREMENT BY 1
+                                  NO MINVALUE
+                                  NO MAXVALUE
+                                  START WITH 1
+                                  CACHE 1;
 
-create sequence activity_cash_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
+CREATE SEQUENCE adjusts_stock_order_seq INCREMENT BY 1
+                                        NO MINVALUE
+                                        NO MAXVALUE
+                                        START WITH 1
+                                        CACHE 1;
 
-create sequence adjusts_stock_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
+CREATE SEQUENCE ali_seq INCREMENT BY 1
+                        NO MINVALUE
+                        NO MAXVALUE
+                        START WITH 1
+                        CACHE 1;
 
-create sequence ali_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
+CREATE SEQUENCE c_bank_seq INCREMENT BY 1
+                           NO MINVALUE
+                           NO MAXVALUE
+                           START WITH 1
+                           CACHE 1;
 
-create sequence c_bank_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence c_finance_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence credit_unit_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence cup_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_address_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_cash_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_collect_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_join_activity_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_pay_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence custom_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence department_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence display_dtl_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence display_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence document_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence employee_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence into_stock_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence out_stock_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence permission_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence product_category_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence product_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence purchase_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence return_visit_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence role_group_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence sale_activity_category_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence sale_activity_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence sale_order_dtl_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence sale_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence shebei_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence specification_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence staging_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence supplier_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence transfer_order_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
-create sequence warehorse_seq
-increment by 1
-                             no minvalue
-                             no maxvalue
-                             start with 1
-                             cache 1;
-
+CREATE SEQUENCE c_finance_seq INCREMENT BY 1
+                              NO MINVALUE
+                              NO MAXVALUE
+                              START WITH 1
+                              CACHE 1;
+
+CREATE SEQUENCE credit_unit_seq INCREMENT BY 1
+                                NO MINVALUE
+                                NO MAXVALUE
+                                START WITH 1
+                                CACHE 1;
+
+CREATE SEQUENCE cup_seq INCREMENT BY 1
+                        NO MINVALUE
+                        NO MAXVALUE
+                        START WITH 1
+                        CACHE 1;
+
+CREATE SEQUENCE custom_address_seq INCREMENT BY 1
+                                   NO MINVALUE
+                                   NO MAXVALUE
+                                   START WITH 1
+                                   CACHE 1;
+
+CREATE SEQUENCE custom_cash_seq INCREMENT BY 1
+                                NO MINVALUE
+                                NO MAXVALUE
+                                START WITH 1
+                                CACHE 1;
+
+CREATE SEQUENCE custom_collect_seq INCREMENT BY 1
+                                   NO MINVALUE
+                                   NO MAXVALUE
+                                   START WITH 1
+                                   CACHE 1;
+
+CREATE SEQUENCE custom_join_activity_seq INCREMENT BY 1
+                                         NO MINVALUE
+                                         NO MAXVALUE
+                                         START WITH 1
+                                         CACHE 1;
+
+CREATE SEQUENCE custom_pay_seq INCREMENT BY 1
+                               NO MINVALUE
+                               NO MAXVALUE
+                               START WITH 1
+                               CACHE 1;
+
+CREATE SEQUENCE custom_seq INCREMENT BY 1
+                           NO MINVALUE
+                           NO MAXVALUE
+                           START WITH 1
+                           CACHE 1;
+
+CREATE SEQUENCE department_seq INCREMENT BY 1
+                               NO MINVALUE
+                               NO MAXVALUE
+                               START WITH 1
+                               CACHE 1;
+
+CREATE SEQUENCE display_dtl_seq INCREMENT BY 1
+                                NO MINVALUE
+                                NO MAXVALUE
+                                START WITH 1
+                                CACHE 1;
+
+CREATE SEQUENCE display_seq INCREMENT BY 1
+                            NO MINVALUE
+                            NO MAXVALUE
+                            START WITH 1
+                            CACHE 1;
+
+CREATE SEQUENCE document_seq INCREMENT BY 1
+                             NO MINVALUE
+                             NO MAXVALUE
+                             START WITH 1
+                             CACHE 1;
+
+CREATE SEQUENCE employee_seq INCREMENT BY 1
+                             NO MINVALUE
+                             NO MAXVALUE
+                             START WITH 1
+                             CACHE 1;
+
+CREATE SEQUENCE into_stock_order_seq INCREMENT BY 1
+                                     NO MINVALUE
+                                     NO MAXVALUE
+                                     START WITH 1
+                                     CACHE 1;
+
+CREATE SEQUENCE out_stock_order_seq INCREMENT BY 1
+                                    NO MINVALUE
+                                    NO MAXVALUE
+                                    START WITH 1
+                                    CACHE 1;
+
+CREATE SEQUENCE permission_seq INCREMENT BY 1
+                               NO MINVALUE
+                               NO MAXVALUE
+                               START WITH 1
+                               CACHE 1;
+
+CREATE SEQUENCE product_category_seq INCREMENT BY 1
+                                     NO MINVALUE
+                                     NO MAXVALUE
+                                     START WITH 1
+                                     CACHE 1;
+
+CREATE SEQUENCE product_seq INCREMENT BY 1
+                            NO MINVALUE
+                            NO MAXVALUE
+                            START WITH 1
+                            CACHE 1;
+
+CREATE SEQUENCE purchase_order_seq INCREMENT BY 1
+                                   NO MINVALUE
+                                   NO MAXVALUE
+                                   START WITH 1
+                                   CACHE 1;
+
+CREATE SEQUENCE return_visit_seq INCREMENT BY 1
+                                 NO MINVALUE
+                                 NO MAXVALUE
+                                 START WITH 1
+                                 CACHE 1;
+
+CREATE SEQUENCE role_group_seq INCREMENT BY 1
+                               NO MINVALUE
+                               NO MAXVALUE
+                               START WITH 1
+                               CACHE 1;
+
+CREATE SEQUENCE sale_activity_category_seq INCREMENT BY 1
+                                           NO MINVALUE
+                                           NO MAXVALUE
+                                           START WITH 1
+                                           CACHE 1;
+
+CREATE SEQUENCE sale_activity_seq INCREMENT BY 1
+                                  NO MINVALUE
+                                  NO MAXVALUE
+                                  START WITH 1
+                                  CACHE 1;
+
+CREATE SEQUENCE sale_order_dtl_seq INCREMENT BY 1
+                                   NO MINVALUE
+                                   NO MAXVALUE
+                                   START WITH 1
+                                   CACHE 1;
+
+CREATE SEQUENCE sale_order_seq INCREMENT BY 1
+                               NO MINVALUE
+                               NO MAXVALUE
+                               START WITH 1
+                               CACHE 1;
+
+CREATE SEQUENCE shebei_seq INCREMENT BY 1
+                           NO MINVALUE
+                           NO MAXVALUE
+                           START WITH 1
+                           CACHE 1;
+
+CREATE SEQUENCE specification_seq INCREMENT BY 1
+                                  NO MINVALUE
+                                  NO MAXVALUE
+                                  START WITH 1
+                                  CACHE 1;
+
+CREATE SEQUENCE staging_seq INCREMENT BY 1
+                            NO MINVALUE
+                            NO MAXVALUE
+                            START WITH 1
+                            CACHE 1;
+
+CREATE SEQUENCE supplier_seq INCREMENT BY 1
+                             NO MINVALUE
+                             NO MAXVALUE
+                             START WITH 1
+                             CACHE 1;
+
+CREATE SEQUENCE transfer_order_seq INCREMENT BY 1
+                                   NO MINVALUE
+                                   NO MAXVALUE
+                                   START WITH 1
+                                   CACHE 1;
+
+CREATE SEQUENCE warehorse_seq INCREMENT BY 1
+                              NO MINVALUE
+                              NO MAXVALUE
+                              START WITH 1
+                              CACHE 1;
