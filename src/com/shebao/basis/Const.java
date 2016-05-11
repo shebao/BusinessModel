@@ -14,8 +14,11 @@ public enum Const {
 	ExistNull(-1,"ExistNull"),
 	NotExistsUser(2,"NotExistsUser"),
 	NotPermission(3,"NotPermission"),
-	CustomName(0,"CustomName"),
+	LoginName(0,"LoginName"),
+	CustomPass(0,"CustomPass"),
 	ActionId(-1,"ActionId"),
+	CheckNum(0,"CheckNum"),
+	Reason(0,"Reason"),
 	/**
 	 * 默认的Logger对象使用的名称
 	 */
